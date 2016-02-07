@@ -1,10 +1,40 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+<div class="head">
+  <p class="lead">
+    <b><%= gettext "Welcome to %{name}", name: "iBoard.cc!" %></b>
+    <br />
+    <small>
+      A productive Content Management System that
+      does not compromise speed and maintainability.
+    </small>
+  </p>
+  <p class="text-right">
+    <small>
+      <em class="rigth">powered by
+        <%= link "Elxir", to: "http://elixir-lang.org" %> and
+        <%= link "Phoenix", to: "http://www.phoenixframework.org" %>
+      </em>
+  </small>
+  </p>
 </div>
 
+<hr>
+
 <div class="row marketing">
-  <div class="col-lg-6">
+  <div class="col-lg-3">
+    <h4>A Warning</h4>
+    <p class="small">
+      This is work in heavy progress and it's just a proof of concept
+      for exactely this ... heavy progress ;-)
+    </p>
+  </div>
+  <div class="col-lg-3">
+    <h4>Andi</h4>
+    <ul>
+      <li><%= link "Blog", to: "http://altendorfer.at" %></li>
+      <li><%= link "G+", to: "https://plus.google.com/+AndreasAltendorfer" %></li>
+    </ul>
+  </div>
+  <div class="col-lg-3">
     <h4>Resources</h4>
     <ul>
       <li>
@@ -19,7 +49,7 @@
     </ul>
   </div>
 
-  <div class="col-lg-6">
+  <div class="col-lg-3">
     <h4>Help</h4>
     <ul>
       <li>
