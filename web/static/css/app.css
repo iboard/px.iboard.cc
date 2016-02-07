@@ -54,6 +54,21 @@ form.link, form.button {
   color: white;
 }
 
+
+/* fix overflow text in code preview of markdown */
+pre {
+  border-radius: 0;
+}
+
+pre code {
+  white-space: pre;
+  word-break: normal;
+  display: inline-block;
+  text-overflow: clip;
+}
+
+
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
@@ -92,3 +107,4 @@ form.link, form.button {
     border-bottom: 0;
   }
 }
+

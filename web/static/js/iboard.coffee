@@ -5,9 +5,9 @@ Iboard =
     options = {
       gfm: true,
       tables: true,
-      breaks: false,
+      breaks: true,
       pedantic: false,
-      sanitize: false,
+      sanitize: true,
       smartLists: true,
       smartypants: true
     }
