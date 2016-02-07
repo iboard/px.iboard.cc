@@ -10,6 +10,11 @@ defmodule Iboard.PageController do
     render conn, "markdown.html", text: license_text
   end
 
+  def howto(conn, _params) do
+    { :ok, text } = File.read("HOWTO.md")
+    render conn, "markdown.html", text: text
+  end
+
   def readme(conn, _params) do
     { :ok, license_text } = File.read("README.md")
     render conn, "markdown.html", text: license_text

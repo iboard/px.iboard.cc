@@ -6,6 +6,7 @@ defmodule Iboard.PageControllerTest do
     assert html_response(conn, 200) =~ "Welcome to iBoard"
     assert html_response(conn, 200) =~ "/license"
     assert html_response(conn, 200) =~ "/readme"
+    assert html_response(conn, 200) =~ "/howto"
   end
 
   test "GET /license", %{conn: conn} do

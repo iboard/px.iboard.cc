@@ -22,6 +22,7 @@
             <ul class="nav nav-pills">
               <li><%= link "Home", to: "/" %></li>
               <li><%= link "ReadMe", to: "/readme" %></li>
+              <li><%= link "How To", to: "/howto" %></li>
               <li><%= link "License", to: "/license" %></li>
             </ul>
           </nav>
@@ -37,5 +38,6 @@
 
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script>require("web/static/js/app").App.run()</script>
   </body>
 </html>

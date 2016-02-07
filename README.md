@@ -1,4 +1,4 @@
-# Iboard
+# iBoard
 
 To start your Phoenix app:
 

@@ -19,6 +19,7 @@ defmodule Iboard.Router do
     get "/", PageController, :index
     get "/license", PageController, :license
     get "/readme", PageController, :readme
+    get "/howto", PageController, :howto
   end
 
   # Other scopes may use custom stacks.

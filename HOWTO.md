@@ -36,7 +36,7 @@ for this date here. Maybe you'll find more information on a specific change.
 CHANGELOG Documentation
 =======================
 
-2016-02-07: Preparation - read `What I did before the first commit` on top
-            of this file.
-
+**2016-02-07**
+ >  Preparation - read `What I did before the first commit` on top
+ >  of this file.
 
