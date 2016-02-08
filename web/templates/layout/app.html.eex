@@ -23,6 +23,7 @@
               <li><%= link "Home", to: "/" %></li>
               <li><%= link "ReadMe", to: "/readme" %></li>
               <li><%= link "How To", to: "/howto" %></li>
+              <li><%= link "Changelog", to: "/changelog" %></li>
               <li><%= link "License", to: "/license" %></li>
             </ul>
           </nav>

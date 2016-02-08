@@ -1,4 +1,5 @@
-# iBoard
+iBoard - README
+===============
 
 To start your Phoenix app:
 

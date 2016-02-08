@@ -19,4 +19,9 @@ defmodule Iboard.PageController do
     { :ok, license_text } = File.read("README.md")
     render conn, "markdown.html", text: license_text
   end
+
+  def changelog(conn, _params) do
+    { :ok, text } = File.read("CHANGELOG.md")
+    render conn, "markdown.html", text: text
+  end
 end

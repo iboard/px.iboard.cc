@@ -7,6 +7,7 @@ defmodule Iboard.PageControllerTest do
     assert html_response(conn, 200) =~ "/license"
     assert html_response(conn, 200) =~ "/readme"
     assert html_response(conn, 200) =~ "/howto"
+    assert html_response(conn, 200) =~ "/changelog"
   end
 
   test "GET /license contains the MIT license", %{conn: conn} do
@@ -22,5 +23,10 @@ defmodule Iboard.PageControllerTest do
   test "GET /howto renders HOWTO.md", %{conn: conn} do
     conn = get conn, "/howto"
     assert html_response(conn, 200) =~ "What I did before the first commit"
+  end
+
+  test "GET /changelog renders CHANGELOG.md", %{conn: conn} do
+    conn = get conn, "/changelog"
+    assert html_response(conn, 200) =~ "Add missing test (how I could miss them?)"
   end
 end

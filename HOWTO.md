@@ -39,4 +39,6 @@ CHANGELOG Documentation
 **2016-02-07**
  >  Preparation - read `What I did before the first commit` on top
  >  of this file.
+ >
+ >  Adding markdown js via node (see `brunch-config.js`)
 
