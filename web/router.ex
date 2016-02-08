@@ -17,10 +17,7 @@ defmodule Iboard.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/license", PageController, :license
-    get "/readme", PageController, :readme
-    get "/howto", PageController, :howto
-    get "/changelog", PageController, :changelog
+    get "/md/:filename", PageController, :md
   end
 
   # Other scopes may use custom stacks.
