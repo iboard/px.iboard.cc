@@ -21,10 +21,10 @@
           <nav role="navigation">
             <ul class="nav nav-pills">
               <li><%= link "Home", to: "/" %></li>
-              <li><%= link "ReadMe", to: "/readme" %></li>
-              <li><%= link "How To", to: "/howto" %></li>
-              <li><%= link "Changelog", to: "/changelog" %></li>
-              <li><%= link "License", to: "/license" %></li>
+              <li><%= link "ReadMe", to: "/md/readme" %></li>
+              <li><%= link "How To", to: "/md/howto" %></li>
+              <li><%= link "Changelog", to: "/md/changelog" %></li>
+              <li><%= link "License", to: "/md/license" %></li>
             </ul>
           </nav>
         </div>
