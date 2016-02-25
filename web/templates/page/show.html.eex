@@ -1,0 +1,18 @@
+<h2>Show page</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @page.title %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @page.body %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: page_path(@conn, :edit, @page) %>
+<%= link "Back", to: page_path(@conn, :index) %>

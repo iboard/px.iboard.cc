@@ -1,10 +1,12 @@
 CHANGELOG
 =========
 
-TODO: 2016-02-24
+TODO:
+:      CRUD Page JSON API
+
+2016-02-24
 :      Add Page Model - id, title, body
 :      CRUD Page HTML
-:      CRUD Page JSON API
 
 2016-02-08
 :      Add missing test (how I could miss them?)

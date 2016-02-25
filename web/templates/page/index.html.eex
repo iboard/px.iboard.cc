@@ -1,66 +1,29 @@
-<div class="head">
-  <p class="lead">
-    <b><%= gettext "Welcome to %{name}", name: "iBoard.cc!" %></b>
-    <br />
-    <small>
-      A productive Content Management System that
-      does not compromise speed and maintainability.
-    </small>
-  </p>
-  <p class="text-right">
-    <small>
-      <em class="rigth">powered by
-        <%= link "Elxir", to: "http://elixir-lang.org" %> and
-        <%= link "Phoenix", to: "http://www.phoenixframework.org" %>
-      </em>
-  </small>
-  </p>
-</div>
+<h1>Welcome to iBoard</h1>
+<h2>Listing pages</h2>
 
-<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
 
-<div class="row marketing">
-  <div class="col-lg-3">
-    <h4>A Warning</h4>
-    <p class="small">
-      This is work in heavy progress and it's just a proof of concept
-      for exactely this ... heavy progress ;-)
-    </p>
-  </div>
-  <div class="col-lg-3">
-    <h4>Andi</h4>
-    <ul>
-      <li><%= link "Blog", to: "http://altendorfer.at" %></li>
-      <li><%= link "G+", to: "https://plus.google.com/+AndreasAltendorfer" %></li>
-    </ul>
-  </div>
-  <div class="col-lg-3">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="http://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for page <- @pages do %>
+    <tr>
+      <td><%= page.title %></td>
+      <td><%= page.body %></td>
 
-  <div class="col-lg-3">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
-</div>
+      <td class="text-right">
+        <%= link "Show", to: page_path(@conn, :show, page), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: page_path(@conn, :edit, page), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: page_path(@conn, :delete, page), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New page", to: page_path(@conn, :new) %>

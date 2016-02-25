@@ -16,6 +16,8 @@ defmodule Iboard.Router do
   scope "/", Iboard do
     pipe_through :browser # Use the default browser stack
 
+    resources "/pages", PageController
+
     get "/", PageController, :index
     get "/md/:filename", PageController, :md
   end
