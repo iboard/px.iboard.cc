@@ -1,29 +1,17 @@
 <h1>Welcome to iBoard</h1>
 <h2>Listing pages</h2>
+<div class="item-options text-right">
+  <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success btn-xs" %>
+</div>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
 <%= for page <- @pages do %>
-    <tr>
-      <td><%= page.title %></td>
-      <td><%= page.body %></td>
+    <h3 class="title"><%= page.title %></h3>
+    <div class="body"><%= page.body %></div>
 
-      <td class="text-right">
+    <div class="item-options text-right">
         <%= link "Show", to: page_path(@conn, :show, page), class: "btn btn-default btn-xs" %>
         <%= link "Edit", to: page_path(@conn, :edit, page), class: "btn btn-default btn-xs" %>
         <%= link "Delete", to: page_path(@conn, :delete, page), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
-      </td>
-    </tr>
+      </div>
 <% end %>
-  </tbody>
-</table>
 
-<%= link "New page", to: page_path(@conn, :new) %>

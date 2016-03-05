@@ -1,18 +1,9 @@
-<h2>Show page</h2>
+<h1><%= @page.title %></h1>
+<nav role="navigation" class="options-menu">
+  <ul class="nav nav-pills">
+    <li><%= link "Edit", to: page_path(@conn, :edit, @page) %></li>
+    <li><%= link "Back", to: page_path(@conn, :index) %></li>
+  </ul>
+</nav>
+<section id="body"><span class="markdown" text="<%= @page.body %>" /></section>
 
-<ul>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @page.title %>
-  </li>
-
-  <li>
-    <strong>Body:</strong>
-    <%= @page.body %>
-  </li>
-
-</ul>
-
-<%= link "Edit", to: page_path(@conn, :edit, @page) %>
-<%= link "Back", to: page_path(@conn, :index) %>

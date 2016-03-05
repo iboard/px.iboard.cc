@@ -36,9 +36,9 @@ defmodule Iboard.PageControllerTest do
   end
 
   test "shows chosen resource", %{conn: conn} do
-    page = Repo.insert! %Page{}
+    page = Repo.insert! %Page{title: "Test Page"}
     conn = get conn, page_path(conn, :show, page)
-    assert html_response(conn, 200) =~ "Show page"
+    assert html_response(conn, 200) =~ "Test Page"
   end
 
   test "renders page not found when id is nonexistent", %{conn: conn} do
