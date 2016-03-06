@@ -42,7 +42,6 @@
     </div> <!-- /container -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
-
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
 
     <!-- Load and run Markdown rendering -->
