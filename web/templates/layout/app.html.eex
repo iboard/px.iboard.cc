@@ -30,15 +30,43 @@
         </div>
       </header>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <div id="pjax-container">
+        <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+        <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+        <main role="main">
+          <%= render @view_module, @view_template, assigns %>
+        </main>
+      </div>
 
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
 
     </div> <!-- /container -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <script>require("web/static/js/app").App.run()</script>
+
+    <!-- Load and run Markdown rendering -->
+    <script>
+      md = require("web/static/js/app");
+      md.App.run();
+    </script>
+
+    <!-- Initialize PJAX -->
+    <script>
+      $(function () {
+        $(document).pjax("a", "#pjax-container");
+      });
+    </script>
+
+    <!-- When pjax reloads a snippet it reloads an unrendered html-inner
+         and the markdown-app will not be executed, so the tag stays empty.
+         It is possible to run the markdown script each time pjax was
+         executed.
+    -->
+    <script>
+      $(document).on('pjax:complete', function() {
+        md.App.run();
+      })
+    </script>
   </body>
 </html>
