@@ -1,6 +1,10 @@
 <h2>Edit page</h2>
+<nav role="navigation" class="options-menu p025">
+  <ul class='nav nav-pills'>
+    <li><%= link "Back", to: page_path(@conn, :index) %></li>
+  </ul>
+</nav>
 
 <%= render "form.html", changeset: @changeset,
                         action: page_path(@conn, :update, @page) %>
 
-<%= link "Back", to: page_path(@conn, :index) %>

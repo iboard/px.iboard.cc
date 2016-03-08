@@ -75,7 +75,7 @@ defmodule Iboard.PageControllerTest do
 
   test "GET /md/readme renders README.md", %{conn: conn} do
     conn = get conn, "/md/readme"
-    assert html_response(conn, 200) =~ "Install dependencies with `mix deps.get`"
+    assert html_response(conn, 200) =~ "Finaly, this one is the Elixir/Phoenix lap"
   end
 
   test "GET /md/howto renders HOWTO.md", %{conn: conn} do

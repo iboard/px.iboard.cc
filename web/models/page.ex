@@ -8,8 +8,8 @@ defmodule Iboard.Page do
     timestamps
   end
 
-  @required_fields ~w(title body)
-  @optional_fields ~w()
+  @required_fields ~w(title)
+  @optional_fields ~w(body)
 
   @doc """
   Creates a changeset based on the `model` and `params`.

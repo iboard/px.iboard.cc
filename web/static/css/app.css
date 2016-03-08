@@ -53,9 +53,11 @@ form.link, form.button {
 }
 
 .options-menu {
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #666;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #EEE;
   margin-bottom: 1em;
+  border-right: none;
+  box-shadow: 0px 2px 3px #888888;
 }
 
 
@@ -71,6 +73,18 @@ pre code {
   text-overflow: clip;
 }
 
+/* Modifiers */
+.p025 {
+  padding-top: 0.25em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.ph025 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
 
 
 /* Customize container */

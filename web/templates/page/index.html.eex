@@ -1,7 +1,7 @@
 <h1>Welcome to iBoard</h1>
 <h2>Listing pages</h2>
-<div class="item-options text-right">
-  <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success btn-xs" %>
+<div class="options-menu item-options p025 text-right">
+    <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success" %>
 </div>
 
 <%= for page <- @pages do %>
