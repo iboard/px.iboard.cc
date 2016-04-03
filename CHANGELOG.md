@@ -4,6 +4,9 @@ CHANGELOG
 TODO:
 :      CRUD Page JSON API
 
+2016-04-03
+:      Pimp the layout. Add Page.preview
+
 2016-02-24
 :      Add Page Model - id, title, body
 :      CRUD Page HTML

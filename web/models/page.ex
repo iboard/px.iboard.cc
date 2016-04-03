@@ -4,7 +4,6 @@ defmodule Iboard.Page do
   schema "pages" do
     field :title, :string
     field :body, :string
-
     timestamps
   end
 
@@ -21,4 +20,13 @@ defmodule Iboard.Page do
     model
     |> cast(params, @required_fields, @optional_fields)
   end
+
+  def preview(model) do
+    if String.length(model.body) > 254 do
+      String.slice(model.body, 0..250) <> "... "
+    else
+      model.body
+    end
+  end
+
 end

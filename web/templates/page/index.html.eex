@@ -1,17 +1,25 @@
 <h1>Welcome to iBoard</h1>
 <h2>Listing pages</h2>
-<div class="options-menu item-options p025 text-right">
+<div class="options-menu item-options p025">
     <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success" %>
 </div>
 
-<%= for page <- @pages do %>
-    <h3 class="title"><%= page.title %></h3>
-    <div class="body"><%= page.body %></div>
+<section id="articles">
+  <%= for page <- @pages do %>
+      <div class="article-preview">
+        <div class="article-preview-header">
+          <div class="item-options text-right">
+            <%= link "Show", to: page_path(@conn, :show, page), class: "btn btn-default btn-xs" %>
+            <%= link "Edit", to: page_path(@conn, :edit, page), class: "btn btn-default btn-xs" %>
+            <%= link "Delete", to: page_path(@conn, :delete, page), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+          </div>
+          <h3 class="title"><%= link page.title, to: page_path(@conn, :show, page) %></h3>
+        </div>
+        <div class="body markdown" text="<%= Iboard.Page.preview(page) %>">
+          <%= Iboard.Page.preview page %>
+        </div>
 
-    <div class="item-options text-right">
-        <%= link "Show", to: page_path(@conn, :show, page), class: "btn btn-default btn-xs" %>
-        <%= link "Edit", to: page_path(@conn, :edit, page), class: "btn btn-default btn-xs" %>
-        <%= link "Delete", to: page_path(@conn, :delete, page), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
       </div>
-<% end %>
+  <% end %>
+</section>
 

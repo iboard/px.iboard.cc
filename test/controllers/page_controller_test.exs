@@ -41,6 +41,13 @@ defmodule Iboard.PageControllerTest do
     assert html_response(conn, 200) =~ "Test Page"
   end
 
+  test "renders body.preview on index page", %{conn: conn} do
+    page = Repo.insert! %Page{title: "Test Page", body: TestHelper.lorem }
+    conn = get conn, "/"
+    response = html_response(conn, 200) |> HtmlEntities.decode
+    assert response =~ Iboard.Page.preview(page)
+  end
+
   test "renders page not found when id is nonexistent", %{conn: conn} do
     assert_error_sent 404, fn ->
       get conn, page_path(conn, :show, "111111111111111111111111")

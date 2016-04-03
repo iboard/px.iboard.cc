@@ -57,8 +57,6 @@ form.link, form.button {
   border-bottom: 1px solid #EEE;
   margin-bottom: 1em;
   border-right: none;
-  box-shadow: 0px 2px 3px #888888;
-  border-radius: 0.3em;
 }
 
 
@@ -85,6 +83,24 @@ pre code {
 .ph025 {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+}
+
+
+/* Extra Decorations added for iBoard */
+
+.article-preview *.title {
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #888;
+}
+
+.article-preview .body * {
+  font-size: smaller;
+}
+
+.article-preview-header .item-options {
+  margin-top: 4.6em;
+  float: right;
 }
 
 
