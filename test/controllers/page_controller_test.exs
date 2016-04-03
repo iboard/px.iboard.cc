@@ -45,7 +45,7 @@ defmodule Iboard.PageControllerTest do
     page = Repo.insert! %Page{title: "Test Page", body: TestHelper.lorem }
     conn = get conn, "/"
     response = html_response(conn, 200) |> HtmlEntities.decode
-    assert response =~ Iboard.Page.preview(page)
+    assert response =~ Iboard.PageView.preview(page)
   end
 
   test "renders page not found when id is nonexistent", %{conn: conn} do
