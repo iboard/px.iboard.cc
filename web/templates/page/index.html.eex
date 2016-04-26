@@ -15,10 +15,9 @@
           </div>
           <h3 class="title"><%= link page.title, to: page_path(@conn, :show, page) %></h3>
         </div>
-        <div class="body markdown" text="<%= Iboard.PageView.preview(page) %>">
-          <%= Iboard.PageView.preview page %>
+        <div class="body markdown" text="<%= Iboard.PageView.preview(@conn,page) %>">
+          <%= Iboard.PageView.preview @conn, page %>
         </div>
-
       </div>
   <% end %>
 </section>

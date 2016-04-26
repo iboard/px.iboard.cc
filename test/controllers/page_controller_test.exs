@@ -45,7 +45,14 @@ defmodule Iboard.PageControllerTest do
     page = Repo.insert! %Page{title: "Test Page", body: TestHelper.lorem }
     conn = get conn, "/"
     response = html_response(conn, 200) |> HtmlEntities.decode
-    assert response =~ Iboard.PageView.preview(page)
+    assert response =~ Iboard.PageView.preview(conn,page)
+  end
+
+  test "preview adds more-link to /pages/:id", %{conn: conn} do
+    page = Repo.insert! %Page{title: "Test Page", body: TestHelper.lorem }
+    conn = get conn, "/"
+    response = html_response(conn, 200) |> HtmlEntities.decode
+    assert response =~ "/pages/#{page.id}\">more"
   end
 
   test "renders page not found when id is nonexistent", %{conn: conn} do

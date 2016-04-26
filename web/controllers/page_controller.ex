@@ -6,7 +6,7 @@ defmodule Iboard.PageController do
   plug :scrub_params, "page" when action in [:create, :update]
 
   def index(conn, _params) do
-    pages = Repo.all(Page)
+    pages = Repo.all(from p in Page, order_by: [desc: p.updated_at])
     render(conn, "index.html", pages: pages)
   end
 
