@@ -7,8 +7,8 @@ defmodule Iboard.PageController do
 
   def index(conn, params) do
     pages = case params["order"] do
-      "desc" -> Repo.all(from p in Page, order_by: [desc: p.updated_at])
-      _ -> Repo.all(from p in Page, order_by: [asc: p.updated_at])
+      "asc" -> Repo.all(from p in Page, order_by: [asc: p.updated_at])
+      _ -> Repo.all(from p in Page, order_by: [desc: p.updated_at])
     end
     render(conn, "index.html", pages: pages)
   end
