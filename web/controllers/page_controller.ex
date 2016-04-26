@@ -5,8 +5,11 @@ defmodule Iboard.PageController do
 
   plug :scrub_params, "page" when action in [:create, :update]
 
-  def index(conn, _params) do
-    pages = Repo.all(from p in Page, order_by: [desc: p.updated_at])
+  def index(conn, params) do
+    pages = case params["order"] do
+      "desc" -> Repo.all(from p in Page, order_by: [desc: p.updated_at])
+      _ -> Repo.all(from p in Page, order_by: [asc: p.updated_at])
+    end
     render(conn, "index.html", pages: pages)
   end
 

@@ -19,6 +19,11 @@ defmodule Iboard.PageControllerTest do
     assert html_response(conn, 200) =~ "Listing pages"
   end
 
+  test "index has sort-links", %{conn: conn} do
+    conn = get conn, page_path(conn, :index)
+    assert html_response(conn, 200) =~ "Oldest first"
+  end
+
   test "renders form for new resources", %{conn: conn} do
     conn = get conn, page_path(conn, :new)
     assert html_response(conn, 200) =~ "New page"

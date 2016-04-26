@@ -1,7 +1,15 @@
 <h1>Welcome to iBoard</h1>
 <h2>Listing pages</h2>
 <div class="options-menu item-options p025">
+  <div class="pull-right">
+    <%= case @conn.params["order"] do 
+       "asc" -> link "Newest first", to: page_path(@conn, :index, %{ order: "desc" }), class: "btn btn-default" 
+       _ -> link "Oldest first", to: page_path(@conn, :index, %{ order: "asc" }), class: "btn btn-default" 
+    end %>
+  </div>
+  <div>
     <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success" %>
+  </div>
 </div>
 
 <section id="articles">
@@ -14,6 +22,7 @@
             <%= link "Delete", to: page_path(@conn, :delete, page), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
           </div>
           <h3 class="title"><%= link page.title, to: page_path(@conn, :show, page) %></h3>
+          <address class="date small"><%= page.updated_at %></address>
         </div>
         <div class="body markdown" text="<%= Iboard.PageView.preview(@conn,page) %>">
           <%= Iboard.PageView.preview @conn, page %>
