@@ -2,13 +2,13 @@
 <h2>Listing pages</h2>
 <div class="options-menu item-options p025">
   <div class="pull-right">
-    <%= case @conn.params["order"] do 
-       "asc" -> link "Newest first", to: page_path(@conn, :index, %{ order: "desc" }), class: "btn btn-default" 
-       _ -> link "Oldest first", to: page_path(@conn, :index, %{ order: "asc" }), class: "btn btn-default" 
-    end %>
+    <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success" %>
   </div>
   <div>
-    <%= link "New page", to: page_path(@conn, :new), class: "btn btn-success" %>
+    <%= case @conn.params["order"] do 
+       "asc" -> link chevron_up("Oldest first"), to: page_path(@conn, :index, %{ order: "desc" }), class: "btn btn-default" 
+       _ -> link chevron_down("Newest first"), to: page_path(@conn, :index, %{ order: "asc" }), class: "btn btn-default" 
+    end %>
   </div>
 </div>
 
