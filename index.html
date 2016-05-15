@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="px.iboard.cc : An Elixir/Phoenix scaffold application using Ecto.Mongo">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>px.iboard.cc</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/iboard/px.iboard.cc">View on GitHub</a>
+
+          <h1 id="project_title">px.iboard.cc</h1>
+          <h2 id="project_tagline">An Elixir/Phoenix scaffold application using Ecto.Mongo</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/iboard/px.iboard.cc/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/iboard/px.iboard.cc/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="iboard---readme" class="anchor" href="#iboard---readme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iBoard - README</h1>
+
+<p><em>iBoard.cc</em> has a tradition in building small blogging- and/or content management
+systems. In the past I did </p>
+
+<ul>
+<li>board - not online anymore. First version written in PHP.</li>
+<li>XBA - not online anymore. Used XML as a datastor {bad idea by the way}</li>
+<li>
+<a href="http://github.com/iboard/userbase">Userbase</a> - First RAILS implementation</li>
+<li>
+<a href="http://github.com/iboard/cba">CBA</a> - Mature RAILS content management </li>
+<li>
+<a href="http://github.com/iboard/wat">WAT</a> - Used in production at WWEDU for a complete distance learning cluster.</li>
+<li>
+<a href="http://github.com/iboard/yarb">YARB</a> - A ruby version using plain <code>PStore</code> instead of any database</li>
+<li>
+<a href="http://github.com/iboard/px.iboard.cc">px.iboard.cc</a> Finaly, this one is the Elixir/Phoenix lap.</li>
+</ul>
+
+<h2>
+<a id="how-to-start" class="anchor" href="#how-to-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to start</h2>
+
+<p>First install the requirements ...</p>
+
+<h3>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
+
+<ul>
+<li>Elixir</li>
+<li>Phoenix</li>
+<li>MongoDB</li>
+</ul>
+
+<h3>
+<a id="start-from-scratch" class="anchor" href="#start-from-scratch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Start from scratch</h3>
+
+<p>First clone the project from <a href="http://github.com/iboard/px.iboard.cc">http://github.com/iboard/px.iboard.cc</a></p>
+
+<pre><code>git clone git@github.com:iboard/px.iboard.cc.git iboard
+cd iboard
+mix deps.get
+mix ecto.create &amp;&amp; mix ecto.migrate
+npm install
+mix phoenix.server
+</code></pre>
+
+<p>Now you can visit <a href="http://localhost:4000"><code>localhost:4000</code></a> from your browser.</p>
+
+<h2>
+<a id="contribution" class="anchor" href="#contribution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribution</h2>
+
+<p>Feel free to collaborate by sending <a href="https://github.com/iboard/px.iboard.cc/pulls">pull requests</a>. But be warned: I'll accept
+only code which is done TDD and almost perfect ;-)</p>
+
+<p>Don't hesitate to contact me <a href="https://twitter.com/#Nickendell">@Nickendell</a>, <a href="https://plus.google.com/+AndreasAltendorfer">Google</a>, or <a href="mailto:andreas@altendorfer.at">email</a>.
+At <a href="http://iboard.cc">iboard.cc</a> you'll find more about me and you may post questions and
+comments there.</p>
+
+<h1>
+<a id="further-information" class="anchor" href="#further-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further information</h1>
+
+<p>See <code>HOWTO.md</code> and <code>CHANGELOG.md</code> </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">px.iboard.cc maintained by <a href="https://github.com/iboard">iboard</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
