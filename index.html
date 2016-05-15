@@ -1,54 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>px.iboard.cc by iboard</title>
+    <meta name="description" content="px.iboard.cc : An Elixir/Phoenix scaffold application using Ecto.Mongo">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>px.iboard.cc</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>px.iboard.cc</h1>
-        <p>An Elixir/Phoenix scaffold application using Ecto.Mongo</p>
 
-        <p class="view"><a href="https://github.com/iboard/px.iboard.cc">View the Project on GitHub <small>iboard/px.iboard.cc</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/iboard/px.iboard.cc">View on GitHub</a>
 
+          <h1 id="project_title">px.iboard.cc</h1>
+          <h2 id="project_tagline">An Elixir/Phoenix scaffold application using Ecto.Mongo</h2>
 
-        <ul>
-          <li><a href="https://github.com/iboard/px.iboard.cc/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/iboard/px.iboard.cc/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/iboard/px.iboard.cc">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/iboard/px.iboard.cc/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/iboard/px.iboard.cc/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a id="iboard---readme" class="anchor" href="#iboard---readme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iBoard - README</h1>
 
 <h2>
-<a id="github---httpsgithubcomiboardpxiboardcc" class="anchor" href="#github---httpsgithubcomiboardpxiboardcc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/iboard/px.iboard.cc">Github</a> - <a href="https://github.com:iboard/px.iboard.cc">https://github.com:iboard/px.iboard.cc</a>
-</h2>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Github</h2>
 
 <ul>
 <li>
-<p><a href="http://iboard.github.io/px.iboard.cc/">Homepage</a></p>
-
-<h1>
-<a id="file-gitconfig" class="anchor" href="#file-gitconfig" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>file .git/config</h1>
-
-<p>[remote "origin"]
-  url = <a href="mailto:git@github.com">git@github.com</a>:iboard/px.iboard.cc.git
-  fetch = +refs/heads/<em>:refs/remotes/origin/</em>
-[branch "master"]
-  remote = origin</p>
+<a href="https://github.com/iboard/px.iboard.cc">Source</a> <code>http://github.com/iboard/px.iboard.cc/</code>
+</li>
+<li>
+<a href="http://iboard.github.io/px.iboard.cc/">Homepage</a> <code>http://iboard.github.io/px.iboard.cc/</code>
 </li>
 </ul>
+
+<h3>
+<a id="gitconfig" class="anchor" href="#gitconfig" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.git/config</h3>
+
+<pre><code># file .git/config
+
+[remote "origin"]
+  url = git@github.com:iboard/px.iboard.cc.git
+  fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+  remote = origin
+</code></pre>
 
 <h2>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2>
@@ -115,29 +123,27 @@ comments there.</p>
 <a id="further-information" class="anchor" href="#further-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further information</h1>
 
 <p>See <code>HOWTO.md</code> and <code>CHANGELOG.md</code> </p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="%7B%7B%20post.url%20%7D%7D">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/iboard">iboard</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">px.iboard.cc maintained by <a href="https://github.com/iboard">iboard</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
-
-    <div>
-      <h1>Index</h1>
-      <ul>
-        {% for post in site.posts %}
-        <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-
-    <script src="javascripts/scale.fix.js"></script>
     
-  </body>
 
+  </body>
 </html>
