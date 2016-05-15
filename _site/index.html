@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>px.iboard.cc by iboard</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>px.iboard.cc</h1>
+        <p>An Elixir/Phoenix scaffold application using Ecto.Mongo</p>
+
+        <p class="view"><a href="https://github.com/iboard/px.iboard.cc">View the Project on GitHub <small>iboard/px.iboard.cc</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/iboard/px.iboard.cc/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/iboard/px.iboard.cc/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/iboard/px.iboard.cc">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="iboard---readme" class="anchor" href="#iboard---readme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iBoard - README</h1>
+
+<h2>
+<a id="github---httpsgithubcomiboardpxiboardcc" class="anchor" href="#github---httpsgithubcomiboardpxiboardcc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/iboard/px.iboard.cc">Github</a> - <a href="https://github.com:iboard/px.iboard.cc">https://github.com:iboard/px.iboard.cc</a>
+</h2>
+
+<ul>
+<li>
+<p><a href="http://iboard.github.io/px.iboard.cc/">Homepage</a></p>
+
+<h1>
+<a id="file-gitconfig" class="anchor" href="#file-gitconfig" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>file .git/config</h1>
+
+<p>[remote "origin"]
+  url = <a href="mailto:git@github.com">git@github.com</a>:iboard/px.iboard.cc.git
+  fetch = +refs/heads/<em>:refs/remotes/origin/</em>
+[branch "master"]
+  remote = origin</p>
+</li>
+</ul>
+
+<h2>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2>
+
+<p><em>iBoard.cc</em> has a tradition in building small blogging- and/or content management
+systems. In the past I did </p>
+
+<ul>
+<li>board - not online anymore. First version written in PHP.</li>
+<li>XBA - not online anymore. Used XML as a datastor {bad idea by the way}</li>
+<li>
+<a href="http://github.com/iboard/userbase">Userbase</a> - First RAILS implementation</li>
+<li>
+<a href="http://github.com/iboard/cba">CBA</a> - Mature RAILS content management </li>
+<li>
+<a href="http://github.com/iboard/wat">WAT</a> - Used in production at WWEDU for a complete distance learning cluster.</li>
+<li>
+<a href="http://github.com/iboard/yarb">YARB</a> - A ruby version using plain <code>PStore</code> instead of any database</li>
+<li>
+<a href="http://github.com/iboard/px.iboard.cc">px.iboard.cc</a> Finaly, this one is the Elixir/Phoenix lap.</li>
+</ul>
+
+<h2>
+<a id="how-to-start" class="anchor" href="#how-to-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to start</h2>
+
+<p>First install the requirements ...</p>
+
+<h3>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
+
+<ul>
+<li>Elixir</li>
+<li>Phoenix</li>
+<li>MongoDB</li>
+</ul>
+
+<h3>
+<a id="start-from-scratch" class="anchor" href="#start-from-scratch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Start from scratch</h3>
+
+<p>Clone the project from <a href="http://github.com/iboard/px.iboard.cc">http://github.com/iboard/px.iboard.cc</a>, cd into it, get
+the deps install node-modules and run the server.</p>
+
+<pre><code>git clone git@github.com:iboard/px.iboard.cc.git iboard
+cd iboard
+mix deps.get
+mix ecto.create &amp;&amp; mix ecto.migrate
+npm install
+mix phoenix.server
+</code></pre>
+
+<p>Now you can visit <a href="http://localhost:4000"><code>localhost:4000</code></a> from your browser.</p>
+
+<h2>
+<a id="contribution" class="anchor" href="#contribution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribution</h2>
+
+<p>Feel free to collaborate by sending <a href="https://github.com/iboard/px.iboard.cc/pulls">pull requests</a>. But be warned: I'll accept
+only code which is done TDD and almost perfect ;-)</p>
+
+<p>Don't hesitate to contact me <a href="https://twitter.com/#Nickendell">@Nickendell</a>, <a href="https://plus.google.com/+AndreasAltendorfer">Google</a>, or <a href="mailto:andreas@altendorfer.at">email</a>.
+At <a href="http://iboard.cc">iboard.cc</a> you'll find more about me and you may post questions and
+comments there.</p>
+
+<h1>
+<a id="further-information" class="anchor" href="#further-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further information</h1>
+
+<p>See <code>HOWTO.md</code> and <code>CHANGELOG.md</code> </p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/iboard">iboard</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+
+    <div>
+      <h1>Index</h1>
+      <ul>
+        {% for post in site.posts %}
+        <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+
+</html>
