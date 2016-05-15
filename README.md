@@ -1,5 +1,19 @@
-iBoard - README
-===============
+# iBoard - README
+
+## [Github][] - https://github.com:iboard/px.iboard.cc
+
+* [Homepage][]
+
+
+    # file .git/config
+
+    [remote "origin"]
+      url = git@github.com:iboard/px.iboard.cc.git
+      fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "master"]
+      remote = origin
+
+## About
 
 *iBoard.cc* has a tradition in building small blogging- and/or content management
 systems. In the past I did 
@@ -24,7 +38,8 @@ First install the requirements ...
 
 ### Start from scratch
 
-First clone the project from http://github.com/iboard/px.iboard.cc
+Clone the project from http://github.com/iboard/px.iboard.cc, cd into it, get
+the deps install node-modules and run the server.
 
     git clone git@github.com:iboard/px.iboard.cc.git iboard
     cd iboard
@@ -58,5 +73,7 @@ See `HOWTO.md` and `CHANGELOG.md`
 [email]: mailto:andreas@altendorfer.at
 [iboard.cc]: http://iboard.cc
 [pull requests]: https://github.com/iboard/px.iboard.cc/pulls
+[Github]: https://github.com/iboard/px.iboard.cc
+[Homepage]: http://iboard.github.io/px.iboard.cc/
 
 

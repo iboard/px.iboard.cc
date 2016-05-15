@@ -1,3 +1,11 @@
+//
+//  REVIEW: 
+//
+//  check whether this file is necessary to be in the repository.
+//  Was it used to generate the skeleton which is in the repo anyhow?
+//  Or may it be used to generate new stuff in the future of this project?
+//
+
 exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
