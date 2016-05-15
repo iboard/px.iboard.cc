@@ -9,7 +9,7 @@ There is a description of the file format at the end of it.
 
 #### Epics
 
-| Epic           | Name                       |
+| Epic          | Name                       |
 |---------------|----------------------------|
 | _Account_     | Account and Authentication |
 | _Account_     | Profile                    |
@@ -20,11 +20,13 @@ There is a description of the file format at the end of it.
 | _Pages_       | Tagging                    |
 | _Pages_       | State/Workflow of pages    |
 | _Patges/API_  | CRUD                       |
+| _Nice2Have_   | Nice to have but no hurry  |
 
 
 ## TODO:
 
 ### Unsorted list of ideas about where to continue
+
 Thinking about where to start from here.
 
 ### 0.0.9 | _Pages/API_ | CRUD Page JSON API
@@ -100,6 +102,7 @@ Change log format:
     #### Added
     #### Fixed
     #### Changed
+    #### Deprecated
     #### Refactor
     #### Test
 

@@ -1,9 +1,11 @@
 # iBoard - README
 
-## [Github][] - https://github.com:iboard/px.iboard.cc
+## Github
 
-* [Homepage][]
+  - [Source][] `http://github.com/iboard/px.iboard.cc/`
+  - [Homepage][] `http://iboard.github.io/px.iboard.cc/`
 
+### .git/config
 
     # file .git/config
 
@@ -74,6 +76,7 @@ See `HOWTO.md` and `CHANGELOG.md`
 [iboard.cc]: http://iboard.cc
 [pull requests]: https://github.com/iboard/px.iboard.cc/pulls
 [Github]: https://github.com/iboard/px.iboard.cc
+[Source]: https://github.com/iboard/px.iboard.cc
 [Homepage]: http://iboard.github.io/px.iboard.cc/
 
 
