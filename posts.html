@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>px.iboard.cc</title>
-    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="{{ site.github.url }}/css/default.css" />
   </head>
 
   <body>
@@ -13,7 +13,7 @@
       {% for post in site.posts %}
         <div class="post-entry"  id="{{ post.title }}">
           <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <blockquote>Permalink: <a href="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a>
+          <blockquote>Permalink: <a href="{{ site.github.url }}{{ post.url }}">{{ site.github.url }}{{ post.url }}</a>
             </br>Last update: {{ post.date | date_to_xmlschema }}
           </blockquote>
         </div>
