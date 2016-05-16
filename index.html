@@ -4,12 +4,19 @@
 <html>
   <head>
     <title>px.iboard.cc</title>
-    <link rel="stylesheet" href="{{ site.url }}/css/default.css" />
+    <link rel="stylesheet" href="{{ site.url | prefix}}/css/default.css" />
   </head>
 
   <body>
     <section id="inner">
       {% include site-header.html %}
+
+        Site: <pre>{{ site }}</pre>
+        Page URL: {{ page.url }}
+        Github: {{ site.github.url }}
+
+
+
       {% capture readme %}{% include README.md %}{% endcapture %}
       {{ readme | markdownify }}
     </section>
