@@ -60,7 +60,7 @@ tr {
 }
 
 td {
-  text-align: left;
+  text-align: left!important;
   padding: 0.25em;
   border-left: 1px solid #444;
 }
