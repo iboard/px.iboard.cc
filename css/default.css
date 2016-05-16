@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #666;
+}
+
 #inner {
   width: 75%;
   margin-left: auto;
