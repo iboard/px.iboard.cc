@@ -26,3 +26,4 @@ erl-crash.dump
 # variables.
 /config/prod.secret.exs
 
+.jekyll-metadata

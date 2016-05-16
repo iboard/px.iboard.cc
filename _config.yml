@@ -12,6 +12,9 @@ baseurl: /px.iboard.cc
 
 defaults:
   -
+    include:
+      - index.html
+      - posts.html
     scope:
       path: "" # an empty string here means all files in the project
     values:

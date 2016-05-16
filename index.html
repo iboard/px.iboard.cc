@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>px.iboard.cc</title>
-    <link rel="stylesheet" href="{{ site.url }}/css/default.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/default.css" />
   </head>
 
   <body>
@@ -13,9 +13,7 @@
 
         Site: <pre>{{ site }}</pre>
         Page URL: {{ page.url }}
-        Github: {{ site.github.url }}
-
-
+        BaseUrl: {{ site.baseurl }}
 
       {% capture readme %}{% include README.md %}{% endcapture %}
       {{ readme | markdownify }}
