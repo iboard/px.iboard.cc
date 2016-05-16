@@ -8,6 +8,8 @@ highlighter: pygments
 markdown: redcarpet
 permalink: pretty
 
+baseurl: /px.iboard.cc
+
 defaults:
   -
     scope:
