@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.github.url }}/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="{{ site.github.url }}/css/default.css" type="text/css">
+    <link rel="stylesheet" href="{{ page.url | prepend: site.github.url }}/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ page.url | prepend: site.github.url }}/css/default.css" type="text/css">
   </head>
   <body id="page-top">
     <section id="inner">
@@ -17,11 +17,11 @@
         <h1>{{ content }}</h1>
       </div>
       <!-- jQuery -->
-      <script src="{{ site.github.url }}/js/jquery-2.2.3.min.js"></script>
+      <script src="{{ page.url | prepend: site.github.url }}/js/jquery-2.2.3.min.js"></script>
     </section>
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ site.github.url }}/js/bootstrap.min.js"></script>
-    <script src="{{ site.github.url }}/js/default.js"></script>
+    <script src="{{ page.url | prepend: site.github.url }}/js/bootstrap.min.js"></script>
+    <script src="{{ page.url | prepend: site.github.url }}/js/default.js"></script>
   </body>
 </html>
 
