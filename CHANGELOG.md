@@ -14,7 +14,7 @@ There is a description of the file format at the end of it.
 #### Epics
 
 | Epic          | Name                       |
-|---------------|----------------------------|
+|:-------------:|:--------------------------:|
 | _Account_     | Account and Authentication |
 | _Account_     | Profile                    |
 | _Basics_      | Images and Attachments     |

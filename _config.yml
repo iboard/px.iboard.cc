@@ -10,6 +10,10 @@ permalink: pretty
 
 baseurl: /px.iboard.cc
 
+redcarpet:
+  input: GFM
+  extensions: [ "tables", "highlight", "with-toc-data" ]
+
 defaults:
   -
     include:

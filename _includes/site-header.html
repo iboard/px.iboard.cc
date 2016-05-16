@@ -1,11 +1,14 @@
 <div id="top-header">
+  <div class="pull-right">Last updated at: {{ site.time }}</div>
   <h1>px.iboard.cc</h1>
-  <p>Time: {{ site.time }}</p>
 </div>
 <nav>
   <ul class="nav nav-pills">
-    <li><a href="{{ site.baseurl }}/">Home</a></li>
-    <li><a href="{{ site.baseurl }}/CHANGELOG">CHANGELOG</a></li>
-    <li><a href="{{ site.baseurl }}/posts">Posts</a></li>
+    <!-- Right Menu Items -->
+    <li class="pull-right"><a href="{{ site.baseurl }}/CHANGELOG">CHANGELOG</a></li>
+    <li class="pull-right"><a href="{{ site.baseurl }}/LICENSE">LICENSE</a></li>
+    <!-- Left Menu Items -->
+    <li><a href="{{ site.baseurl }}/">README</a></li>
+    <li><a href="{{ site.baseurl }}/posts">POSTS</a></li>
   </ul>
 </nav>
