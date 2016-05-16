@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#inner {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+
+p {
+  padding-top: 0.25em;
+}
+
+.post-entry {
+  padding-top: 1em;
+}
+
+#top-header {
+  background: #424242;
+  color: white;
+  border-bottom: 1px solid #eee;
+  padding: 1em;
+}
+
+nav {
+  background: #424242;
+  color: white;
+  padding: 0.25em;
+  padding-bottom: 0;
+}
+
+nav a {
+  color: #EEEEEE;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.url }}/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.url }}/css/default.css" type="text/css">
+  </head>
+  <body id="page-top">
+    <section id="inner">
+      {% include site-header.html %}
+      <div class="post-entry"  id="{{ post.title }}">
+        <h1>{{ content }}</h1>
+      </div>
+      <!-- jQuery -->
+      <script src="{{ site.url }}/js/jquery-2.2.3.min.js"></script>
+    </section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ site.url }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.url }}/js/default.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,16 @@
+title: px.iboard.cc
+author: Andreas Altendorfer
+description: "The Elixir/Phoenix implementation of iBoard.cc"
+
+# build settings
+port: 4000
+highlighter: pygments
+markdown: redcarpet
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
