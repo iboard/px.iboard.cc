@@ -10,9 +10,10 @@ permalink: pretty
 
 baseurl: /px.iboard.cc
 
+gems: [jekyll-coffeescript, jekyll-watch]
+
 redcarpet:
-  input: GFM
-  extensions: [ "tables", "highlight", "with-toc-data" ]
+  extensions: [ "tables", "highlight", "with_toc_data" ]
 
 defaults:
   -
