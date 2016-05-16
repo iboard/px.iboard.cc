@@ -60,3 +60,13 @@ td {
   padding: 0.25em;
   border-left: 1px solid #444;
 }
+
+.toc {
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+
+copyright {
+  font-size: xx-small;
+}
+

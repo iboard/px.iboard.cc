@@ -1,23 +1,12 @@
 ---
-  layout: default
+  layout: post
 ---
-<html>
-  <head>
-    <title>px.iboard.cc</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/default.css" />
-  </head>
 
-  <body>
-    <section id="inner">
-      {% include site-header.html %}
-      {% for post in site.posts %}
-        <div class="post-entry"  id="{{ post.title }}">
-          <h3><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
-          <blockquote>Permalink: <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.url }}</a>
-            </br>Last update: {{ post.date | date_to_xmlschema }}
-          </blockquote>
-        </div>
-      {% endfor %}
-    </section>
-  </body>
-</html>
+{% for post in site.posts %}
+  <div class="post-entry"  id="{{ post.title }}">
+    <h3><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
+    <blockquote>Permalink: <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.url }}</a>
+      </br>Last update: {{ post.date | date_to_xmlschema }}
+    </blockquote>
+  </div>
+{% endfor %}

@@ -122,5 +122,3 @@ Within the TODO section, the version is the version where this feature, fix,
 whatever is planned to be released. VERSION\* marks a MUST BE released with
 this version. 
 
-•••
-

@@ -14,10 +14,11 @@
     <section id="inner">
       {% include site-header.html %}
       <div class="post-entry"  id="{{ post.title }}">
-        <h1>{{ content }}</h1>
+        {{ content }}
       </div>
       <!-- jQuery -->
       <script src="{{ site.baseurl }}/js/jquery-2.2.3.min.js"></script>
+      {% include footer.html %}
     </section>
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
