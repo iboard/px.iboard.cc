@@ -1,0 +1,18 @@
+---
+  layout: default
+---
+<html>
+  <head>
+    <title>px.iboard.cc</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/default.css" />
+  </head>
+
+  <body>
+    <section id="inner">
+      {% include site-header.html %}
+
+      {% capture readme %}{% include README.md %}{% endcapture %}
+      {{ readme | markdownify }}
+    </section>
+  </body>
+</html>
