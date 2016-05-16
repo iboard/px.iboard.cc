@@ -11,9 +11,6 @@
     <section id="inner">
       {% include site-header.html %}
 
-        Site: <pre>{{ site }}</pre>
-        Page URL: {{ page.url }}
-        BaseUrl: {{ site.baseurl }}
 
       {% capture readme %}{% include README.md %}{% endcapture %}
       {{ readme | markdownify }}
