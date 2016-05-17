@@ -41,6 +41,10 @@ Add json-api for the following routes
 Add coffeescript to display a TOC on each page.
 Added to project and enable in layouts.
 
+Add coffeescript to handle external links. It
+autodetects links to foreign sites and adds
+target \_blank to the link.
+
 ## 0.0.0 - 2016-05-15
 ### Refactor
 
