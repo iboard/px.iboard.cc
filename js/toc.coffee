@@ -58,6 +58,7 @@ class @TOC
       if _next.is("h2")
         str += addH2Link _next, level, sublevel
         sublevel += 1
+        $("#TOC").show()
       _next = _next.next()
     str
 

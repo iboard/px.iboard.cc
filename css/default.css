@@ -89,4 +89,13 @@ copyright {
   padding: 1em;
   margin-top: 6em;
   background: #DDD;
+  display: none;
 }
+
+.TODO {
+  background: red;
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.25em;
+}
+
