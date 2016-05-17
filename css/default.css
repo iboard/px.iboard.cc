@@ -84,3 +84,9 @@ copyright {
   font-size: xx-small;
 }
 
+#TOC {
+  border: 1px solid black;
+  padding: 1em;
+  margin-top: 6em;
+  background: #DDD;
+}

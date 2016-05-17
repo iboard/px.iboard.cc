@@ -14,6 +14,7 @@
     <section id="inner">
       {% include site-header.html %}
       <div class="post-entry"  id="{{ post.title }}">
+        <div class="pull-right" id="TOC"></div>
         {{ content }}
       </div>
       <!-- jQuery -->
@@ -23,6 +24,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     <script src="{{ site.baseurl }}/js/coffee.js"></script>
+    <script src="{{ site.baseurl }}/js/toc.js"></script>
     <script src="{{ site.baseurl }}/js/default.js"></script>
   </body>
 </html>
