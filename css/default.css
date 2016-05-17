@@ -92,10 +92,32 @@ copyright {
   display: none;
 }
 
+.todo, .important,
 .TODO {
   background: red;
   color: white;
   border-radius: 0.25em;
   padding: 0.25em;
+}
+
+.done,
+.DONE {
+  background: green;
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.25em;
+}
+
+.info {
+  background: blue;
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.25em;
+}
+
+.lables {
+  margin: 0;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
 }
 

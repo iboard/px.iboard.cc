@@ -34,6 +34,7 @@ Add json-api for the following routes
 ----
 
 ## 0.0.0 - 2016-05-17
+
 ### Add
 
 **TOC**
@@ -45,7 +46,14 @@ Add coffeescript to handle external links. It
 autodetects links to foreign sites and adds
 target \_blank to the link.
 
+**Post tags**
+
+Now you can add a value `tags: [t1,t2,...]` to the postings jekyll-yaml header.
+Optional add a css-class of the same name. See css TODO, info, ...
+
+
 ## 0.0.0 - 2016-05-15
+
 ### Refactor
 
 _Basics_ | Review README, CHANGELOG
@@ -53,18 +61,21 @@ _Basics_ | Review README, CHANGELOG
 ----
 
 ## 0.0.0 - 2016-05-10
+
 #### Added
 _Pages_ | Add sort-button for index-view. (Sort by updated\_at)
 
 ----
 
 ## 0.0.0 - 2016-04-03
+
 #### Changed
 _Basics_ | Pimp the layout. Add Page.preview
 
 ----
 
 ## 0.0.0 - 2016-02-24
+
 #### Added
 
 _Pages_ | Add Page Model - id, title, body
@@ -84,12 +95,14 @@ _Pages_ | Refactor controller (one function to render md-files)
 ----
 
 ## 0.0.0 - 2016-02-07
+
 ### Added
 _Pages_ | Add node-based javascripts (marked), see commit 782ebc9
 
 ----
 
 ## 0.0.0 - 2016-02-07
+
 ### Added
 _Basics_ | Generating a new Phoenix-MongoDb-Project.
 Read `HOWTO.md` for more information.

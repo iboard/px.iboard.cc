@@ -5,14 +5,14 @@ description: "The Elixir/Phoenix implementation of iBoard.cc"
 # build settings
 port: 4000
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
 
 baseurl: /px.iboard.cc
 
 gems: [jekyll-coffeescript, jekyll-watch]
 
-redcarpet:
+kramdown:
   extensions: [ "tables", "highlight", "with_toc_data" ]
 
 defaults:

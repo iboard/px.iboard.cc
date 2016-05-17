@@ -1,6 +1,7 @@
 ---
   layout: post
   title: Versioning
+  tags: [info]
 ---
 
 # Versioning

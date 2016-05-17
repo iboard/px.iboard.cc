@@ -1,6 +1,7 @@
 ---
   layout: post
   title: Next Steps
+  tags: [info]
 ---
 
 # Next Steps

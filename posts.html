@@ -5,7 +5,13 @@
 {% for post in site.posts %}
   <div class="post-entry"  id="{{ post.title }}">
     <h3><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
-    <blockquote>Permalink: <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.url }}</a>
+      <div class="lables">
+        {% for tag in post.tags %}
+          <span class="{{ tag }}">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <blockquote>
+        <br/>Permalink: <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.url }}</a>
       </br>Last update: {{ post.date | date_to_xmlschema }}
     </blockquote>
   </div>

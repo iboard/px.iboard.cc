@@ -1,11 +1,12 @@
 ---
   layout: post
   title: Update from redcarpet to karmdown
+  tags: [done,important]
 ---
 
 ## Received a warning from Github when pushing the site
 
-<span class="TODO">Update asap</span>
+<span class="DONE">DONE: Update asap</span>
 
 The page build completed successfully, but returned the following warning:
 
