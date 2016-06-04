@@ -27,3 +27,4 @@ erl-crash.dump
 /config/prod.secret.exs
 
 .jekyll-metadata
+node_modules/
