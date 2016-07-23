@@ -14,7 +14,7 @@ defmodule Iboard.PageControllerTest do
     assert html_response(conn, 200) =~ "/md/changelog"
   end
 
-  test "lists all entries on index", %{conn: conn} do
+  test "render listing of pages", %{conn: conn} do
     conn = get conn, page_path(conn, :index)
     assert html_response(conn, 200) =~ "Listing pages"
   end

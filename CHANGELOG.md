@@ -22,6 +22,14 @@ There is a description of the file format at the end of it.
 | _Patges/API_  | CRUD                       |
 | _Nice2Have_   | Nice to have but no hurry  |
 
+## Bugs to be fixed
+
+### Bug 001 - Delete button needs reloading the page
+
+> Delete Button of a page works fine the first time but sometimes does 
+> nothing unless you reload the page first.
+
+Reported: 2016-07-23, Andi
 
 ## TODO:
 
