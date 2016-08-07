@@ -6,8 +6,8 @@
   </div>
   <div>
     <%= case @conn.params["order"] do 
-       "asc" -> link chevron_up("Oldest first"), to: page_path(@conn, :index, %{ order: "desc" }), class: "btn btn-default" 
-       _     -> link chevron_down("Newest first"), to: page_path(@conn, :index, %{ order: "asc" }), class: "btn btn-default" 
+       "asc" -> link chevron_up("Oldest first"), to: page_path(@conn, :index, %{ order: "desc" }), class: "btn btn-default", id: "sort-button"
+       _     -> link chevron_down("Newest first"), to: page_path(@conn, :index, %{ order: "asc" }), class: "btn btn-default", id: "sort-button" 
     end %>
   </div>
 </div>

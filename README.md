@@ -37,6 +37,7 @@ First install the requirements ...
   * Elixir
   * Phoenix
   * MongoDB
+  * PhantomJS
 
 ### Start from scratch
 
@@ -51,6 +52,19 @@ the deps install node-modules and run the server.
     mix phoenix.server
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+
+## Running the tests
+
+### Run all tests including end-to-end with webdriver (slow)
+
+  1. Start PhantomJS `phantomjs --wd`
+  2. run the tests `mix test --trace`
+
+## Run without end-to-end test (fast)
+
+  1. No need to start PhantomJS
+  2. run `mix test --trace --exlcude webdriver`
 
 ## Contribution
 
