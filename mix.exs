@@ -20,8 +20,15 @@ defmodule Iboard.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Iboard, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mongodb_ecto]]
+     applications: app_list(Mix.env)]
+  end
+
+  defp app_list(:test) do
+    [:hound | app_list(:all)]
+  end
+  defp app_list(_) do
+    [:phoenix, :phoenix_html, :cowboy, :logger, :gettext, 
+     :phoenix_ecto, :mongodb_ecto]
   end
 
   # Specifies which paths to compile per environment.
@@ -40,6 +47,7 @@ defmodule Iboard.Mixfile do
      {:gettext, "~> 0.9"},
      {:html_entities, "~> 0.3"},
      {:cowboy, "~> 1.0"},
+     {:hound, "~> 1.0", only: :test },
      {:excoveralls, "~> 0.5", only: :test}]
   end
 
