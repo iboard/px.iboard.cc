@@ -1,1 +1,8 @@
 cover/
+_build/
+_site/
+deps/
+node_modules/
+priv/
+web/
+
