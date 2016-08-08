@@ -16,16 +16,10 @@ defmodule LandingPageTest do
 
     navigate_to("/pages")
 
-    title = find_element(:id, "articles")
-            |> find_within_element(:class, "title")
-            |> find_within_element(:tag,:a)
-            |> inner_html
-
-
+    title = find_first_title()
     assert title == "Test Page"
   end
 
-  
   @tag webdriver: true
   test "Sort pages", _meta do
 
@@ -46,6 +40,16 @@ defmodule LandingPageTest do
 
   end
 
+  # Helper functions
+
+  defp find_first_title do
+    find_element(:id, "articles")
+            |> find_within_element(:class, "title")
+            |> find_within_element(:tag,:a)
+            |> inner_html
+
+  end
+  
   defp get_title_map do
     articles = find_element(:id, "articles")
 
