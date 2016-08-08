@@ -4,7 +4,7 @@ description: "The Elixir/Phoenix implementation of iBoard.cc"
 
 # build settings
 port: 4000
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 permalink: pretty
 
