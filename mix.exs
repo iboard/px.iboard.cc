@@ -30,7 +30,8 @@ defmodule Iboard.Mixfile do
     [:hound | app_list(:all)]
   end
   defp app_list(_) do
-    [:phoenix, :phoenix_html, :cowboy, :logger, :gettext, 
+    [:phoenix, :phoenix_html, 
+     :cowboy, :logger, :gettext, 
      :phoenix_ecto, :mongodb_ecto]
   end
 
