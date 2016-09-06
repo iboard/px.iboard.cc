@@ -12,7 +12,7 @@ defmodule LandingPageTest do
 
   @tag webdriver: true
   test "Pages index view", _meta do
-    page = Repo.insert! %Page{title: "Test Page", body: "Lorem"}
+    _page = Repo.insert! %Page{title: "Test Page", body: "Lorem"}
 
     navigate_to("/pages")
 
@@ -24,9 +24,9 @@ defmodule LandingPageTest do
   test "Sort pages", _meta do
 
     # Insert two posts
-    Repo.insert! %Page{title: "Old Post", body: "Lorem"}
-    :timer.sleep 500
-    Repo.insert! %Page{title: "New Post", body: "Lorem"}
+    { t1, t2 } = TestHelper.two_timestamps(1000)
+    Repo.insert! %Page{title: "Old Post", body: "Lorem", updated_at: t1 }
+    Repo.insert! %Page{title: "New Post", body: "Lorem", updated_at: t2 }
 
     # Should listed in latest first order
     navigate_to("/pages")
@@ -35,7 +35,6 @@ defmodule LandingPageTest do
     # Now sort to oldest first
     sort_button = find_element(:id, "sort-button")
     click(sort_button)
-    :timer.sleep(700) # Wait until the page is sorted
     assert get_title_map() == ["Old Post", "New Post"]
 
   end
