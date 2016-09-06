@@ -64,7 +64,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ## Run without end-to-end test (fast)
 
   1. No need to start PhantomJS
-  2. run `mix test --trace --exlcude webdriver`
+  2. run `mix test --trace --exclude webdriver`
 
 ## Contribution
 
