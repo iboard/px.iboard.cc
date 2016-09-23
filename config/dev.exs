@@ -24,4 +24,5 @@ config :phoenix, :stacktrace_depth, 20
 config :iboard, Iboard.Repo,
   adapter: Mongo.Ecto,
   database: "iboard_dev",
+  port: 27717,
   pool_size: 10
