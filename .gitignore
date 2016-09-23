@@ -26,3 +26,4 @@ erl_crash.dump
 /config/prod.secret.exs
 _site/
 cover/
+.docker_env
