@@ -6,3 +6,6 @@ node_modules/
 priv/
 web/
 
+.docker_env
+erl_crash.dump
+config/
