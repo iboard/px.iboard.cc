@@ -1,3 +1,7 @@
+---
+  layout: post
+---
+
 # PX.iBOARD.CC CHANGELOG
 
 This change log is meant to be readed top to bottom. So, latest information
